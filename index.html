@@ -1,1 +1,181 @@
-wait bana raha hu 1 min bas 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss Queen 2.0 - Cricket Predictions</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+        body{
+            background:#0a0a16 url('https://wallpapercave.com/wp/wp11306538.jpg') center/cover fixed;
+            color:#fff;
+            min-height:100vh;
+            position:relative
+        }
+        body:before{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(10,10,22,0.7);
+            z-index:0
+        }
+        .container{
+            max-width:500px;
+            margin:0 auto;
+            padding:20px 15px;
+            position:relative;
+            z-index:1;
+            text-align:center;
+        }
+        .crown {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+        .title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #FFD700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .profile-container {
+            margin: 25px 0;
+        }
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #FFD700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        .features {
+            margin: 25px 0;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .feature-list {
+            list-style: none;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .feature-item {
+            padding: 8px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .feature-item:before {
+            content: "✓";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .cta-button {
+            display: block;
+            background: linear-gradient(45deg, #ff0080, #8a2be2);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 16px 25px;
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
+            border: none;
+            font-size: 1.2rem;
+            box-shadow: 0 0 20px rgba(255, 0, 128, 0.7);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(255, 0, 128, 0.9);
+        }
+        .cta-text {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        @media (max-width: 500px) {
+            .title {
+                font-size: 1.8rem;
+            }
+            .profile-image {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="crown">
+                ★ ★ ★
+            </div>
+            <h1 class="title">TOSS QUEEN 2.0</h1>
+            <p class="subtitle">Expert in Cricket Predictions & Analysis ❤️</p>
+        </header>
+        
+        <div class="profile-container">
+            <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/692321b34051d_6132026118647778648.jpg" alt="Toss Queen 2.0" class="profile-image">
+        </div>
+        
+        <div class="features">
+            <h2 class="section-title">What You'll Get</h2>
+            <ul class="feature-list">
+                <li class="feature-item">Accurate Toss Predictions</li>
+                <li class="feature-item">Match Winner Forecasts</li>
+                <li class="feature-item">Expert Cricket Analysis</li>
+                <li class="feature-item">Live Match Updates</li>
+            </ul>
+        </div>
+        
+        <div class="cta-section">
+            <a href="https://telegram.me/+DxYOWXq1EJ43OTI1" class="cta-button">JOIN THE CHANNEL NOW</a>
+            <p class="cta-text">Get Live Cricket Updates & Insights ⚡</p>
+        </div>
+        
+        <div class="footer">
+            Toss Queen 2.0 - Your Cricket Prediction Expert
+        </div>
+    </div>
+
+    <script>
+        // Simple hover effect for CTA button
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButton = document.querySelector('.cta-button');
+            
+            ctaButton.addEventListener('mouseover', function() {
+                this.style.transform = 'translateY(-3px)';
+                this.style.boxShadow = '0 0 25px rgba(255, 0, 128, 0.9)';
+            });
+            
+            ctaButton.addEventListener('mouseout', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 0 20px rgba(255, 0, 128, 0.7)';
+            });
+            
+            // Preload profile image for faster loading
+            const profileImage = new Image();
+            profileImage.src = 'https://d1yei2z3i6k35z.cloudfront.net/13184094/692321b34051d_6132026118647778648.jpg';
+        });
+    </script>
+</body>
+</html>
