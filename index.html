@@ -97,9 +97,16 @@
             font-size: 1.2rem;
             box-shadow: 0 0 20px rgba(255, 0, 128, 0.7);
             transition: all 0.3s ease;
+            animation: zoomInOut 2s ease-in-out infinite;
+        }
+        @keyframes zoomInOut {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
         .cta-button:hover {
-            transform: translateY(-3px);
+            animation: none;
+            transform: scale(1.07);
             box-shadow: 0 0 25px rgba(255, 0, 128, 0.9);
         }
         .cta-text {
@@ -158,21 +165,8 @@
     </div>
 
     <script>
-        // Simple hover effect for CTA button
+        // Preload profile image for faster loading
         document.addEventListener('DOMContentLoaded', function() {
-            const ctaButton = document.querySelector('.cta-button');
-            
-            ctaButton.addEventListener('mouseover', function() {
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 0 25px rgba(255, 0, 128, 0.9)';
-            });
-            
-            ctaButton.addEventListener('mouseout', function() {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = '0 0 20px rgba(255, 0, 128, 0.7)';
-            });
-            
-            // Preload profile image for faster loading
             const profileImage = new Image();
             profileImage.src = 'https://d1yei2z3i6k35z.cloudfront.net/13184094/692321b34051d_6132026118647778648.jpg';
         });
